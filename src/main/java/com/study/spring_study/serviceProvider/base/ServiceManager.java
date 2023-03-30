@@ -1,11 +1,12 @@
 package com.study.spring_study.serviceProvider.base;
 
-import com.study.spring_study.serviceProvider.base.Service;
-import com.study.spring_study.serviceProvider.base.ServiceProvider;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 提供注册
+ * DriverManager registerDriver getConnection
+ */
 public class ServiceManager {
  
     private static final Map<String, ServiceProvider> providers = new ConcurrentHashMap<String, ServiceProvider>();
