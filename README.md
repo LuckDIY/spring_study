@@ -2,11 +2,47 @@
 用于学习spring相关知识
 
 #### 组件理解:
-BeanWrapper :  <br />
+##### BeanWrapper:
    spring 提供的操作javaBean属性的工具类
 ````
 BeanWrapper bw = PropertyAccessorFactory.forBeanPropertyAccess(new Object());
 bw.setPropertyValue("设置属性key","设置属性value");
 ````
-xxxAware : <br />
+##### xxxAware:
    spring 提供，如果某个类想获取xxx，则通过实习xxxAware来获取
+
+##### BootstrapRegistryInitializer
+##### ApplicationContextInitializer
+##### ApplicationListener
+todo暂时不理解，都是通过 getSpringFactoriesInstances(class)从spring.factories中加载
+
+
+
+
+
+
+--------------------------------------
+#### 方法使用理解
+##### List<T> getSpringFactoriesInstances(class type)
+从spring.factories中加载指定类型的所有实现类
+
+
+
+-------------------------------------
+#### 类理解
+##### BeanDefinition 
+spring对bean的属性描述，类似java中的class类，其中包含 是否单例等属性
+##### BeanDefinitionRegistry
+即BeanDefinition容器，提供注册BeanDefinition和获取等基础接口
+##### BeanDefinitionReader 
+具体作用未知：提供注册BeanDefinition，然后放入registry中，此接口不必实现，只提供接口规范
+##### BeanDefinitionScanner
+提供扫描包方法，把符合的Bean注册到registry中
+
+
+#### 额外工具 todo 详细去了解
+Introspector 内省 , PropertyDescriptor 属性描述符, BeanUtils , 
+BeanWrapper , ResolvableType 可解析的类型 ,
+ConversionService 类型转化服务 , Resource 资源类, Environment 环境类,
+ApplicationEventMulticaster 事件发布订阅器
+

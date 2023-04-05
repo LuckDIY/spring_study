@@ -1,6 +1,7 @@
 package com.study.spring_study.serviceProvider;
 
 import com.study.spring_study.serviceProvider.base.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * 服务接口实现类
