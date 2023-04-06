@@ -41,7 +41,7 @@ spring对bean的属性描述，类似java中的class类，其中包含 是否单
 
 
 #### 额外工具 todo 详细去了解
-Introspector 内省 , PropertyDescriptor 属性描述符, BeanUtils , 
+Introspector 内省者 , PropertyDescriptor 属性描述符, BeanUtils , 
 BeanWrapper , ResolvableType 可解析的类型 ,
 ConversionService 类型转化服务 , Resource 资源类, Environment 环境类,
 ApplicationEventMulticaster 事件发布订阅器
