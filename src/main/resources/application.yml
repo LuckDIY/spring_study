@@ -1,0 +1,11 @@
+sms:
+  alibaba:
+    #????accessKey
+    accessKeyId: LTAI5tAt3Q2vhuUnMT4W8xiG
+    #????accessKeySecret
+    accessKeySecret: QxkQuG2bzXzb2AMqG6UsSQm3SCA6zF
+    #????
+    signature: ggbody
+
+
+

@@ -9,6 +9,7 @@ import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
+import java.util.HashMap;
 
 public class Test {
  
@@ -24,6 +25,7 @@ public class Test {
         ObjectMapper objectMapper = new ObjectMapper();
         String s = objectMapper.writeValueAsString(user);
         System.out.println(s);
+        new HashMap<Integer,Integer>().merge(1,1,Integer::sum);
 
     }
 
